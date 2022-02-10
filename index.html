@@ -13,14 +13,90 @@ body {
   background-image: url('./images/sl.jpeg');
 }
 
+.row {
+  display: flex;
+}
+
+
+.column {
+  float: left;
+  flex: 100%;
+  margin-left: 20px;
+}
+
+.columns {
+  float: left;
+  flex: 20%;
+  margin-left: 20px;
+}
+
+li {
+  color: aliceblue;
+  font-size: 25px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
 </head>
 <body>
 
 <p>SET EKA ශ්‍රීපාද වන්දනාව</p>
-   
 
 <p id="demo" style="color: darkgrey;"></p>
+
+<p id="demo" style="color: darkgrey;"></p>
+
+<p style="font-size: 40px;">මොනවද ගෙන්න ඕන?</p>
+
+<div class="row">
+  
+  <div class="column">
+    
+    <h2 style="color: aliceblue;">අනිවාර්යෙන් අවශ්‍ය දේවල් </h2> 
+  
+    <ul>
+      <li>Jersy</li>
+      <li>Ice cap</li>
+      <li>Glouse</li>
+      <li>masks 3 or more</li>
+      <li>water bottle 2 or more</li>
+      <li>Bedsheets</li>
+      <li>Towel</li>
+      <li>Polythene</li>
+      <li>Toothpaste</li>
+      <li>toothbrush</li>
+      <li>Sope</li>
+      <li>sanitizer</li>
+      <li>Lemon</li>
+      <li>Dresses for 2 days</li>
+    </ul>  
+  </div>
+  
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <h2 style="color: aliceblue;">අවශ්‍ය වියහැකි දේවල්</h2>
+  
+    <ul>
+      <li>Raincort</li>
+      <li>Torch</li>
+      <li>Spoon & Fork</li>
+      <li>Crepe bandage</li>
+    
+    </ul>  
+  
+  </div>
+    </div>
+
 
 <p style="font-size: 40px;">කවුද යන්නේ?</p>
 
@@ -39,6 +115,7 @@ body {
 
 
 </p>
+
 
 <script>
 // Set the date we're counting down to
