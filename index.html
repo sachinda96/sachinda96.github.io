@@ -43,6 +43,26 @@ li {
   clear: both;
 }
 
+.alert {
+  width: 200px;
+  height: 50px;
+  background-color:darkgrey;
+  position: relative;
+  color:black;
+  animation: mymove 9s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
 </style>
 </head>
 <body>
@@ -115,6 +135,13 @@ li {
 
 
 </p>
+
+
+<div class="alert" id="div1">මස් මාලු කැමෙන් වලකින්න</div>
+<div class="alert" id="div2">15 පන්සල් යන්න ඔන</div>
+<div class="alert" id="div3">ගෙනියන්න ඔන දෙවල් 16ට කලින් ගමු නෙද?</div>
+<div class="alert" id="div4">මෙ ටිකෙ rest කරමු bro</div>
+
 
 
 <script>
